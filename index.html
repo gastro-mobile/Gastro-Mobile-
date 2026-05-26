@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastro Mobile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">Gsstro<span>Mobile</span></a>
+            <nav>
+                <ul>
+        <li><a href="#inicio">inicio</a></li>
+        <li><a href="#videos">Vídeos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#" id="open-sidebar" class="btn-parceiro-nav"><i class="fas fa-handshake"></i> Parceiros</a></li>
+    </ul>
+                
+            </nav>
+            <a href="https://youtube.com/@gastro20097?si=99N6oou7sMnsL7yx.com" target="_blank" class="btn-subscribe">Inscreva-se</a>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-text">
+            <h5>com o Gastro a gameplay é diferenciada</h5>
+            <h1>Bem-vindo ao Próximo Nível</h1>
+            <p>Acompanhe as jornadas mais épicas, reviews sinceros e gameplays insanas do mundo dos jogos.</p>
+            <a href="#videos" class="btn-primary">Assistir Agora</a>
+        </div>
+    </section>
+
+    <section id="videos" class="videos-section">
+        <div class="container">
+            <h2>Últimos <span>Vídeos</span></h2>
+            <div class="video-grid">
+                
+                <div class="video-card">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/cSFWCHk3hos" title=YouTube video" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>gta rp do telemovel</h3>
+                        <p>reduto roleplay o melhor rp do Mobile.</p>
+                    </div>
+                </div>
+
+                                <div class="video-card">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/2--6svF4jvo" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Servidor 100% Mobile que vai inovar o SAMP!</h3>
+                        <p>Primeiro olhar exclusivo no Skypixel Roleplay, um projeto ultra otimizado com sistemas incríveis de iPod, Spotify e transmissão ao vivo.</p>
+                    </div>
+                </div>
+
+
+                <div class="video-card">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/gJI_mOAD3Fg" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Os Melhores Easter Eggs Escondidos</h3>
+                        <p>Você com certeza deixou passar esses segredos bizarros que os devs esconderam.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2>Sobre o <span>Canal</span></h2>
+                <p>Fala galera! Eu sou o [Gastro Mobile], e este canal foi criado para quem acompanha o meu Canal. </p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                    <a href="https://discord.gg/2J3qv4bHPX" target="_blank"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Gastro Mobile. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Gastro Mobile</p>
+        </div>
+    </footer>
+    <div id="sidebar-parceiros" class="sidebar">
+        <div class="sidebar-content">
+            <span class="close-btn" id="close-sidebar">&times;</span>
+            <h2>Nossos <span>Parceiros</span></h2>
+            <p>Conheça os parceiros oficiais do Gastro Studio!</p>
+            
+<div class="parceiros-lista">
+    
+    <div class="parceiro-item">
+        <h3>cubico studio</h3>
+        <p>Cubico studio.</p>
+        <a href="https://discord.gg/PuQF45PR6q" target="_blank" class="btn-primary">Visitar o discord</a>
+    </div>
+    
+    <div class="parceiro-item">
+        <h3>capital city</h3>
+        <p>melhor jogo mobile</p>
+        <a href="https://discord.gg/capitalcityrp" target="_blank" class="btn-primary">Visitar o discord</a>
+    </div>
+    
+</div> </div> </div> <script>
+    const sidebar = document.getElementById('sidebar-parceiros');
+    const openBtn = document.getElementById('open-sidebar');
+    const closeBtn = document.getElementById('close-sidebar');
+
+    // Abrir a aba ao clicar no botão do menu
+    openBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        sidebar.classList.add('active');
+    });
+
+    // Fechar a aba ao clicar no 'X'
+    closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+    });
+
+    // Fechar a aba se clicar fora dela
+    window.addEventListener('click', (e) => {
+        if (e.target === sidebar) {
+            sidebar.classList.remove('active');
+        }
+    });
+</script>
+
+
+</body>
+</html>
